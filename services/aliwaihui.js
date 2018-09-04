@@ -72,8 +72,8 @@ function getexchangerate(callback){
   function clearexcrate(){
     rate = null;
   }
-  var onehour = 24*60*1000;
+  var twohour = 2*60*60*1000;
   //一个小时清理一次缓存
-  setInterval(clearexcrate,onehour);
+  setInterval(clearexcrate,twohour);
 
   module.exports=getRate;

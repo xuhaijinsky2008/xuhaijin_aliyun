@@ -1,5 +1,9 @@
+html,body{
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
-  padding: 50px;
+  padding: 20px 10px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: #000;
   background: #fff;
@@ -35,4 +39,10 @@ th{
 .user-list{
   width: 50%;
   float: left;
+}
+@media screen and (max-width: 600px){
+  .user-list {
+    width: 100%;
+    float: none
+  }
 }
